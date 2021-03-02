@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+        <link rel="preload" href="/assets/fonts/ibm-plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/assets/fonts/ibm-plex-sans-500.woff2" as="font" type="font/woff2" crossorigin>
+
+        <link rel="icon" href="/assets/img/icon-192x192.png" type="image/png">
+        <link rel="stylesheet" href="/assets/css/app.css">
+
+        <title>Streamr + IFTTT</title>
+    </head>
+
+    <body>
+        <form>
+            <header>
+                <a href="https://streamr.network">
+                    <img src="/assets/img/streamr.svg" height="80" alt="Streamr">
+                </a>
+
+                <span>+</span>
+
+                <a href="https://ifttt.com">
+                    <img src="/assets/img/ifttt.svg" height="40" alt="IFTTT">
+                </a>
+            </header>
+
+            <main>
+                <p>
+                    Authorize IFTTT to use Streamr private key<br>for signing streaming data
+                </p>
+
+                <fieldset>
+                    <label for="privateKey">Streamr private key</label>
+                    <input type="text" name="privateKey" id="privateKey" placeholder="Enter your Streamr private key" required pattern="^[\d\w]{64}$" autocapitalize="off" autocorrect="off" spellcheck="false" autocomplete="off">
+                </fieldset>
+            </main>
+
+            <footer>
+                <button type="button">Cancel</button>
+                <input type="submit" value="Authorize IFTTT">
+            </footer>
+        </form>
+
+        <script src="/assets/js/app.js"></script>
+    </body>
+</html>

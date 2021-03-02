@@ -1,0 +1,23 @@
+{
+  "name": "streamr-ifttt-proxy",
+  "description": "A service API between IFTTT and Streamr",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "keywords": [
+    "streamr",
+    "ifttt"
+  ],
+  "author": {
+    "name": "Sergej Müller",
+    "url": "https://sergejmueller.github.io"
+  },
+  "devDependencies": {
+    "ngrok": "^3.4.0",
+    "vercel": "^21.3.1"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "streamr-client": "^4.1.6"
+  }
+}
