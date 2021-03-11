@@ -19,8 +19,10 @@ div,
 body,
 html,
 main,
+div,
 form,
 input,
+fieldset,
 button,
 label {
     padding: 0;
@@ -150,10 +152,15 @@ header span {
     font-size: 50px;
 }
 
-main p {
-    margin: 40px 0 60px;
-    color: rgba(50, 50, 50, 0.5);
+main div {
+    padding: 40px 0 60px;
     text-align: center;
+}
+main p {
+    margin: 0 0 20px;
+}
+main small {
+    color: rgba(50, 50, 50, 0.5);
 }
 
 footer {

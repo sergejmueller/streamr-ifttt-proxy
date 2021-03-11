@@ -10,7 +10,7 @@
         <link rel="preload" href="/assets/fonts/ibm-plex-sans-500.woff2" as="font" type="font/woff2" crossorigin>
 
         <link rel="icon" href="/assets/img/icon-192x192.png" type="image/png">
-        <link rel="stylesheet" href="/assets/css/app.css">
+        <link rel="stylesheet" href="/assets/css/app.css?20210309">
 
         <title>Streamr + IFTTT</title>
     </head>
@@ -30,9 +30,14 @@
             </header>
 
             <main>
-                <p>
-                    Authorize IFTTT to use Streamr private key<br>for signing streaming data
-                </p>
+                <div>
+                    <p>
+                        Authorize IFTTT to use Streamr user name, user id<br>and private key for signing streaming data
+                    </p>
+                    <small>
+                        We do not recommend having significant amounts of value on this account. Anyone with your private key controls your tokens.
+                    </small>
+                </div>
 
                 <fieldset>
                     <label for="privateKey">Streamr private key</label>
