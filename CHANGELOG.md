@@ -1,5 +1,8 @@
 ## Changelog
 
+### 1.0.2 (2021-05-28)
+* Changed pattern for the private key
+
 ### 1.0.1 (2021-03-11)
 * Text changes on the authorize page
 
