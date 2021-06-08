@@ -19,7 +19,7 @@ module.exports = (req, res) => {
 
     const privateKey = helpers.fromBase64(req.body['code'])
 
-    if (/^[\d\w]{64}$/.exec(privateKey) === null) {
+    if (/^[\d\w]{64,66}$/.exec(privateKey) === null) {
         return helpers.sendError(res, 'No valid private key extracted', 401)
     }
 

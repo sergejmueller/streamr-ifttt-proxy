@@ -1,6 +1,6 @@
 module.exports = {
     getPrivateKeyFromHeaders(headers) {
-        const results = /Bearer ([\d\w]{64})/gm.exec(headers['authorization'])
+        const results = /Bearer ([\d\w]{64,66})/gm.exec(headers['authorization'])
 
         return results !== null ? results[1] : null
     },
