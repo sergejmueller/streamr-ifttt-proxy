@@ -30,7 +30,7 @@
 
         const privateKey = form.elements['privateKey'].value;
 
-        if (!privateKey || /^[\d\w]{64}$/.exec(privateKey) === null) {
+        if (!privateKey || /^[\d\w]{64,66}$/.exec(privateKey) === null) {
             return alert('Wrong private key');
         }
 
