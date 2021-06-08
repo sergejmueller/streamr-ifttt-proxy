@@ -18,6 +18,9 @@ module.exports = {
         const output = {}
         let match
 
+        // Remove line breaks
+        data = data.replace(/[\r\n]+(?!(^.+?=))/gm, ' ');
+
         while((match = regex.exec(data)) !== null) {
             // To avoid infinite loops
             if (match.index === regex.lastIndex) {
@@ -31,6 +34,7 @@ module.exports = {
     },
 
     sendError(res, msg, code) {
+        console.log('ERROR', code, msg);
         return res.status(code).json({
             errors: [{ 'status': 'SKIP', 'message': msg }]
         })
